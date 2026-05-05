@@ -1,0 +1,464 @@
+=== PAGE 1 ===
+TE MINI PROJECT  LOGBOOK  
+ 
+<Project Title>  
+ 
+GROUP MEMBERS  
+1.  
+2.  
+3.  
+ 
+ 
+GUIDE/SUPERVISOR  
+Prof.  
+ 
+ 
+ 
+ 
+Department of Computer Engineering  
+ Fr Conceicao Rodrigues College of 
+Engineering , Bandra  
+University of Mumbai  
+(AY 2023 -2024 )
+
+
+=== PAGE 2 ===
+Student Details  
+ 
+ 
+Semester:   
+ 
+Subject code:  
+ 
+Project Title:               
+ _____________________________________________________________________                                    
+  
+ _____________________________________________________________________  
+ 
+Category of Project: Application/Product/Research/Review/other_____________  
+ 
+ 
+Team Members:  
+ 
+Roll Number  Name  
+  
+  
+  
+  
+ 
+ 
+Project Guide : _______________________________________________________________  
+ 
+ 
+  
+
+=== PAGE 3 ===
+ 
+Course Outcomes:  
+ 
+Semester VI 
+ 
+ 
+ 
+Mini Project  25PCC13CE18 TE COMPS A & B  
+CO1  Identify and analyze  problems related to society, research, innovation, and 
+entrepreneurship through a comprehensive literature survey.  
+CO2  Formulate and apply appropriate methodologies using engineering knowledge and skills 
+to develop effective solutions.  
+CO3  Validate, verify, and evaluate the impact of solutions using test cases, benchmark data, 
+theoretical inferences, experiments, or simulations.  
+CO4  Adopt standard engineering practices and project management principles while 
+ensuring sustainability and ethical considerations.  
+CO5  Develop technical competency and lifelong learning through self -directed learning, 
+participation in competitions, hackathons, and exposure to industry trends.  
+CO6  Enhance communication and teamwork skills through technical report writing, 
+presentations, and collaborative group work  
+ 
+
+=== PAGE 4 ===
+Programme Outcomes  
+Engineering Graduates will be able to  
+• Engineering knowledge:  Apply the knowledge of mathematics, science, engineering 
+fundamentals, and an engineering specialization to the solution of complex 
+engineering problems.  
+• Problem analysis:  Identify, formulate, review research literature, and analyze 
+complex engineering problems reaching substantiated conclusions using first 
+principles of mathematics, natural sciences, and engineering sciences.  
+• Design/Development of solutions:  Design solutions for complex engineering 
+problems and design system components or processes that meet the specified needs 
+with appropriate consideration for public health and safety, and the cultural, societal, 
+and environmental considerations.  
+• Conduct investigations of complex problems:  Use research -based knowledge and 
+research methods including design of experiments, analysis, and interpretation of 
+data, and synthesis of the information to provide valid conclusions.  
+• Modern tool usage:  Create, select, and apply appropriate techniques, resources, and 
+modern engineering and IT tools including prediction and modelling of complex 
+engineering activities with an understanding of the limitations.  
+• The engineer and society:  Apply reasoning informed by the contextual knowledge to 
+assess societal, health, safety, legal and cultural issues and the consequent 
+responsibilities relevant to the professional engineering practice.  
+• Environment and sustainability:  Understand the impact of the professional 
+engineering solutions in societal and environmental contexts, and demonstrate the 
+knowledge of, and the need for sustainable development.  
+• Ethics:  Apply ethical principles and commit to professional ethics and responsibilities 
+and norms of the engineering practice.  
+• Individual and teamwork:  Function effectively as an individual, and as a member or 
+leader in diverse teams, and in multidisciplinary settings.  
+• Communication:  Communicate effectively on complex engineering activities with 
+the engineering community and with society at large, such as being able to 
+comprehend and write effective reports and design documentation, make effective 
+presentations, and give and receive clear instructions.  
+• Project Management and finance:  Demonstrate knowledge and understanding of 
+the engineering and management principles and apply these to one’s work, as a 
+member and leader in a team, to manage projects and in multidisciplinary 
+environments.  
+• Life-long learning:  Recognized the need for, and have the preparation and ability to 
+engage in independent and life -long learning in the broadest context of technological 
+change.  
+Programme Specific Outcomes  
+The student will have the ability to  
+• Develop Artificial Intelligence and Machine Learning systems.  
+• Apply cyber security mechanisms to ensure the protection of information technology 
+assets.  
+
+=== PAGE 5 ===
+CO-PO-PSO  Mapping  with justification:  
+CO CO Statements  PO Lev
+el Justification  
+CO1  Identify societal/ research/ 
+innovation/ entrepreneurship 
+problems through appropriate 
+literature surveys  PO1 
+<1.3.1  
+1.4.1>  2 Students will be able to apply 
+engineering fundamentals and 
+computer science principals to 
+find real time problems.  
+They shall identify existing 
+solutions and compare them ;  
+Identify risks/impacts in the 
+life-cycle of an engineering 
+product or activit y wrt 
+environment and 
+sustainability.  
+Apply moral & ethical 
+principles to known case  
+ PO6 
+<6.1.1>  2 
+PO7 
+<7.1.1>  
+ 1 
+PO8 
+<8.2.2>  1 
+CO2  Identify Methodology for solving 
+above problem and apply 
+engineering knowledge and skills 
+to solve it  PO2 
+<2.1.1  2.1.2  
+2.2.2    
+2.2.3>  2 Students will be able to define 
+problem statements and 
+objectives and scope.  
+Identify the modules, datasets 
+and computing resouces 
+required to solve the problem,  
+Define the algorithm 
+,testcases for proposed 
+solution  
+Create appropriate 
+documentation.  
+Apply functionalities/ 
+procedures to get the solution  
+Discuss limitations and 
+validate tools, techniques and 
+resources  
+Apply moral & ethical 
+principles to known case  PO3 
+<3.1.1>  1 
+PO4 
+<4.1.2   
+4.1.3   4.2.1   
+4.3.1   4.3.2  
+> 3 
+PO5 
+<5.3.1>  1 
+PO8 
+<8.2.2>  1 
+
+=== PAGE 6 ===
+CO3  Validate, Verify the results using 
+test cases/benchmark 
+data/theoretical/ 
+inferences/experiments/simulations  PO3 
+<3.4.3>  1 Able to verify the 
+functionalities and validate 
+the design  
+CO5  Use standard norms of engineering 
+practices and project management 
+principles during project work  PO10  
+<10.1.1,10.1
+.2,10.1.3>  2 Understand and interpret 
+technical and non -technical 
+information.  
+Produce well constructed, 
+well supported written 
+engineering documents.  
+Able to a show logical 
+progression of ideas  using 
+figures, reports, drawing to 
+complement presentations  
+ 
+CO8  Demonstrate capabilities of self -
+learning, leading to lifelong 
+learning.  PO12<12.1.
+2> 1 Identify deficiencies or gaps 
+in knowledge and demonstrate 
+an ability to source 
+information to close this gap  
+CO9  Develop interpersonal skills to 
+work as a member of a group or as 
+leader.  PO8 
+<8.2.2>  
+PO9 
+PO10  
+<10.2.1,10.2
+.2> 1 Apply moral & ethical 
+principles to known case  
+Demonstrate effective 
+communication, problem -
+solving, conflict resolution 
+and leadership skills  
+Treat other team members 
+respectfully and maintain 
+composure in difficult 
+situations.  
+resent results as a team, with 
+smooth integration of 
+contributions from all 
+individual efforts.  
+Listen to and comprehend 
+information, instructions, and 
+viewpoints of others  
+Deliver effective oral 
+presentations to technical and 
+non-technical audience  3 
+2 
+  
+
+=== PAGE 7 ===
+WEEK – 01 
+ 
+Date:  From  ____________________________  To: ______________________________  
+ 
+Progress Achieved:  
+ 
+________________________________________________________________________________________________________________  
+ 
+________________________________________________________________________________________________________________  
+ 
+Team Member’s contribution:  
+ 
+Team Member 1  Team Member 2  Team Member 3  Team Member 4  
+ 
+ 
+ 
+ 
+    
+ 
+Mentor’s Suggestions:  
+ 
+ 
+ 
+ 
+ 
+ 
+Signature:  Project guide:  
+ 
+Team Member 1:  Signature:  
+ 
+Team Member 2:  Date:  
+ 
+Team Member 3:  
+ 
+Team Member 4:  
+  
+
+=== PAGE 8 ===
+WEEK – ________  
+ 
+Date:  From  ____________________________  To: ______________________________  
+ 
+Progress Achieved:  
+ 
+________________________________________________________________________________________________________________  
+ 
+________________________________________________________________________________________________________________  
+ 
+Team Member’s contribution:  
+ 
+Team Member 1  Team Member 2  Team Member 3  Team Member 4  
+ 
+ 
+ 
+ 
+    
+ 
+Mentor’s Suggestions:  
+ 
+ 
+ 
+ 
+ 
+ 
+Signature:  Project guide:  
+ 
+Team Member 1:  Signature:  
+ 
+Team Member 2:  Date:  
+ 
+Team Member 3:  
+ 
+Team Member 4:  
+  
+
+=== PAGE 9 ===
+Course Outcomes:  
+ 
+Semester VI 
+CO3  Validate, Verify the results using test cases/benchmark data/theoretical/ 
+inferences/experiments/simulations  
+CO4  Analyze  and evaluate the impact of solution/product/research/innovation 
+/entrepreneurship towards societal/environmental/sustainable 
+development  
+CO5  Use standard norms of engineering practices and project management 
+principles during project work  
+CO6  Communicate through technical report writing and oral presentation.  
+● The work may result in research/white paper/ article/blog writing and 
+publication  
+● The work may result in business plan for entrepreneurship product 
+created  
+● The work may result in patent filing.  
+CO7  Gain technical competency towards participation in Competitions, 
+Hackathons, etc.  
+CO8  Demonstrate capabilities of self -learning, leading to lifelong learning.  
+CO9  Develop interpersonal skills to work as a member of a group or as leader.  
+ 
+  
+
+=== PAGE 10 ===
+WEEK – 01 
+ 
+Date:  From  ____________________________  To: ______________________________  
+ 
+Progress Achieved:  
+ 
+________________________________________________________________________________________________________________  
+ 
+________________________________________________________________________________________________________________  
+ 
+Team Member’s contribution:  
+ 
+Team Member 1  Team Member 2  Team Member 3  Team Member 4  
+ 
+ 
+ 
+ 
+    
+ 
+Mentor’s Suggestions:  
+ 
+ 
+ 
+ 
+ 
+ 
+Signature:  Project guide:  
+ 
+Team Member 1:  Signature:  
+ 
+Team Member 2:  Date:  
+ 
+Team Member 3:  
+ 
+Team Member 4:  
+  
+
+=== PAGE 11 ===
+WEEK – _________________  
+ 
+Date:  From  _ ___________________________  To: ______________________________  
+ 
+Progress Achieved:  
+ 
+________________________________________________________________________________________________________________  
+ 
+________________________________________________________________________________________________________________  
+ 
+Team Member’s contribution:  
+ 
+Team Member 1  Team Member 2  Team Member 3  Team Member 4  
+ 
+ 
+ 
+ 
+    
+ 
+Mentor’s Suggestions:  
+ 
+ 
+ 
+ 
+ 
+ 
+Signature:  Project guide:  
+ 
+Team Member 1:  Signature:  
+ 
+Team Member 2:  Date:  
+ 
+Team Member 3:  
+ 
+Team Member 4:  
+  
+
+=== PAGE 12 ===
+Details of Publication/Patents/Participation/Awards  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+_____________________________________________________________________________________________________________  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

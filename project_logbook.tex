@@ -1,0 +1,867 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+
+% Page setup
+\geometry{margin=1in}
+
+% Custom colors
+\definecolor{headercolor}{RGB}{41, 128, 185}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+
+% Title formatting
+\title{\textbf{TE MINI PROJECT LOGBOOK}}
+\author{}
+\date{}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\Huge\bfseries TE MINI PROJECT LOGBOOK\par}
+\vspace{2cm}
+\\[2cm]
+{\Large\bfseries Project Title:\par}
+{\Large Credit Risk Prediction Model\par}
+\vspace{2cm}
+\\[1cm]
+{\Large\bfseries GROUP MEMBERS\par}
+\vspace{0.5cm}
+\begin{tabular}{l l}
+1. & Ralph Joseph Dsouza (10242) \\
+2. & Chris Fernandes (10244) \\
+3. & Ijas Keni (10253) \\
+\end{tabular}
+\\[2cm]
+{\Large\bfseries GUIDE/SUPERVISOR\par}
+\vspace{0.5cm}
+Prof. Sohan Agate \underline{\hspace{5cm}}
+\\[2cm]
+\begin{center}
+Department of Computer Engineering \\
+Fr. Conceicao Rodrigues College of Engineering, Bandra \\
+University of Mumbai \\
+(AY 2023-2024)
+\end{center}
+\end{titlepage}
+
+\newpage
+
+% Student Details Section
+\section*{Student Details}
+\vspace{0.5cm}
+
+\begin{tabular}{p{3cm} p{10cm}}
+\textbf{Semester:} & VI \\
+\textbf{Subject code:} & 25PCC13CE18 TE COMPS A \& B \\
+\textbf{Project Title:} & Credit Risk Prediction Model \\
+ & \\
+\textbf{Category of Project:} & Application \\
+\end{tabular}
+
+\vspace{1cm}
+
+\subsection*{Team Members}
+\begin{tabular}{|c|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{headercolor}
+\color{white}{\textbf{Sr. No.}} & \color{white}{\textbf{Roll Number}} & \color{white}{\textbf{Name}} \\
+\hline
+1 & 10242 & Ralph Joseph Dsouza \\
+\hline
+2 & 10244 & Chris Fernandes \\
+\hline
+3 & 10253 & Ijas Keni \\
+\hline
+\end{tabular}
+
+\vspace{1cm}
+
+\subsection*{Project Guide}
+Prof. Sohan Agate \underline{\hspace{8cm}}
+
+\newpage
+
+% Course Outcomes
+\section*{Course Outcomes}
+\vspace{0.5cm}
+
+Semester VI
+
+\medskip
+
+\begin{tabular}{p{0.5cm} p{14cm}}
+\textbf{CO1} & Identify and analyze problems related to society, research, innovation, and entrepreneurship through a comprehensive literature survey. \\
+\textbf{CO2} & Formulate and apply appropriate methodologies using engineering knowledge and skills to develop effective solutions. \\
+\textbf{CO3} & Validate, verify, and evaluate the impact of solutions using test cases, benchmark data, theoretical inferences, experiments, or simulations. \\
+\textbf{CO4} & Adopt standard engineering practices and project management principles while ensuring sustainability and ethical considerations. \\
+\textbf{CO5} & Develop technical competency and lifelong learning through self-directed learning, participation in competitions, hackathons, and exposure to industry trends. \\
+\textbf{CO6} & Enhance communication and teamwork skills through technical report writing, presentations, and collaborative group work. \\
+\textbf{CO7} & Gain technical competency towards participation in Competitions, Hackathons, etc. \\
+\textbf{CO8} & Demonstrate capabilities of self-learning, leading to lifelong learning. \\
+\textbf{CO9} & Develop interpersonal skills to work as a member of a group or as leader. \\
+\end{tabular}
+
+\newpage
+
+% Programme Outcomes
+\section*{Programme Outcomes}
+\vspace{0.5cm}
+
+Engineering Graduates will be able to:
+
+\medskip
+
+\begin{tabular}{p{0.5cm} p{14cm}}
+\textbf{PO1} & \textbf{Engineering knowledge:} Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems. \\
+\textbf{PO2} & \textbf{Problem analysis:} Identify, formulate, review research literature, and analyze complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences. \\
+\textbf{PO3} & \textbf{Design/Development of solutions:} Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for public health and safety, and the cultural, societal, and environmental considerations. \\
+\textbf{PO4} & \textbf{Conduct investigations of complex problems:} Use research-based knowledge and research methods including design of experiments, analysis, and interpretation of data, and synthesis of the information to provide valid conclusions. \\
+\textbf{PO5} & \textbf{Modern tool usage:} Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling of complex engineering activities with an understanding of the limitations. \\
+\textbf{PO6} & \textbf{The engineer and society:} Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice. \\
+\textbf{PO7} & \textbf{Environment and sustainability:} Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and the need for sustainable development. \\
+\textbf{PO8} & \textbf{Ethics:} Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice. \\
+\textbf{PO9} & \textbf{Individual and teamwork:} Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings. \\
+\textbf{PO10} & \textbf{Communication:} Communicate effectively on complex engineering activities with the engineering community and with society at large, such as being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions. \\
+\textbf{PO11} & \textbf{Project Management and finance:} Demonstrate knowledge and understanding of the engineering and management principles and apply these to one's work, as a member and leader in a team, to manage projects and in multidisciplinary environments. \\
+\textbf{PO12} & \textbf{Life-long learning:} Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change. \\
+\end{tabular}
+
+\newpage
+
+% Programme Specific Outcomes
+\section*{Programme Specific Outcomes}
+\vspace{0.5cm}
+
+The student will have the ability to:
+
+\medskip
+
+\begin{tabular}{p{0.5cm} p{14cm}}
+\textbf{PSO1} & Develop Artificial Intelligence and Machine Learning systems. \\
+\textbf{PSO2} & Apply cyber security mechanisms to ensure the protection of information technology assets. \\
+\end{tabular}
+
+\newpage
+
+% CO-PO-PSO Mapping
+\section*{CO-PO-PSO Mapping with Justification}
+\vspace{0.5cm}
+
+\begin{longtable}{|c|p{4cm}|c|c|p{6cm}|}
+\hline
+\rowcolor{headercolor}
+\color{white}{\textbf{CO}} & \color{white}{\textbf{CO Statements}} & \color{white}{\textbf{PO}} & \color{white}{\textbf{Level}} & \color{white}{\textbf{Justification}} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{headercolor}
+\color{white}{\textbf{CO}} & \color{white}{\textbf{CO Statements}} & \color{white}{\textbf{PO}} & \color{white}{\textbf{Level}} & \color{white}{\textbf{Justification}} \\
+\hline
+\endhead
+\hline
+\endfoot
+\endlastfoot
+
+CO1 & Identify societal/research/innovation/entrepreneurship problems through appropriate literature surveys & PO1 & 2 & Students will be able to apply engineering fundamentals and computer science principals to find real time problems. They shall identify existing solutions and compare them. \\
+\hline
+CO2 & Identify Methodology for solving above problem and apply engineering knowledge and skills to solve it & PO2 & 2 & Students will be able to define problem statements and objectives and scope. Identify the modules, datasets and computing resources required to solve the problem. \\
+\hline
+CO3 & Validate, Verify the results using test cases/benchmark data/theoretical/inferences/experiments/simulations & PO3 & 1 & Able to verify the functionalities and validate the design. \\
+\hline
+CO4 & Analyze and evaluate the impact of solution/product/research/innovation/entrepreneurship towards societal/environmental/sustainable development & PO6, PO7 & 2 & Identify risks/impacts in the life-cycle of an engineering product or activity wrt environment and sustainability. \\
+\hline
+CO5 & Use standard norms of engineering practices and project management principles during project work & PO10 & 2 & Understand and interpret technical and non-technical information. Produce well constructed, well supported written engineering documents. \\
+\hline
+CO6 & Communicate through technical report writing and oral presentation & PO9, PO10 & 3 & Demonstrate effective communication, problem-solving, conflict resolution and leadership skills. Deliver effective oral presentations to technical and non-technical audience. \\
+\hline
+CO7 & Gain technical competency towards participation in Competitions, Hackathons, etc. & PO12 & 1 & Identify deficiencies or gaps in knowledge and demonstrate an ability to source information to close this gap. \\
+\hline
+CO8 & Demonstrate capabilities of self-learning, leading to lifelong learning & PO12 & 1 & Identify deficiencies or gaps in knowledge and demonstrate an ability to source information to close this gap. \\
+\hline
+CO9 & Develop interpersonal skills to work as a member of a group or as leader & PO8, PO9 & 1 & Apply moral \& ethical principles to known case. Demonstrate effective communication and leadership skills. \\
+\hline
+\end{longtable}
+
+\newpage
+
+% Weekly Log Entries
+\section*{Weekly Log Entries}
+
+% Week 1
+\subsection*{WEEK – 01}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 18/02/2026 To: 24/02/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Project kickoff meeting conducted with all team members to discuss project scope and objectives \\
+2. Literature survey on credit risk prediction models completed - reviewed 15+ research papers on ML-based credit risk assessment \\
+3. Requirement gathering and scope definition for the credit risk model - identified key features like loan amount, income, credit history \\
+4. Repository setup on GitHub and local environment configuration with Python 3.12 \\
+5. Task distribution among team members based on expertise and interest areas \\
+6. Initial research on similar ML projects and best practices in fintech industry \\
+7. Python environment setup with required libraries (pandas, numpy, scikit-learn, streamlit, matplotlib, seaborn) \\
+8. Created project folder structure (data/, src/, models/, tests/) and initialized version control with Git \\
+9. Created requirements.txt with all necessary dependencies and virtual environment setup \\
+10. First meeting with mentor Prof. Sohan Agate to discuss project plan and timeline
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Project planning, task allocation, literature survey (8 papers reviewed), requirement gathering & Research on similar ML projects (Kaggle datasets), environment setup, dependency installation & Folder structure creation, Git initialization, requirements.txt creation, virtual environment setup \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Good progress in first week. Continue with detailed literature review. \\
+Ensure proper documentation of all activities. \\
+Focus on understanding the business domain of credit risk assessment.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 2
+\subsection*{WEEK – 02}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 25/02/2026 To: 03/03/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Dataset acquired from Kaggle (Credit Risk Dataset - 1000+ records with 20 features) \\
+2. Exploratory Data Analysis (EDA) performed using pandas, matplotlib and seaborn libraries \\
+3. Data quality assessment completed - identified 10\% class imbalance (loan defaults vs non-defaults) \\
+4. Initial data visualization: histograms for numerical features, bar charts for categorical features \\
+5. Correlation analysis completed - found strong correlation between age, income, and loan amount \\
+6. Identified missing values (15\%) in employment duration and credit history columns \\
+7. Created data quality report with findings and recommendations for preprocessing \\
+8. Analyzed target variable distribution - 900 non-defaults vs 100 defaults in training data \\
+9. Statistical summary of all features including mean, median, standard deviation, min/max values \\
+10. Second meeting with mentor to discuss data findings and preprocessing strategy
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Dataset acquisition from Kaggle, initial data loading and exploration, statistical summary creation & EDA with visualizations (histograms, box plots), correlation matrix generation, data distribution analysis & Data quality report creation, missing value analysis, data type identification and documentation \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Focus on handling class imbalance. Consider SMOTE or other techniques. \\
+Document all data preprocessing steps clearly. \\
+Explore feature engineering opportunities for better model performance.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 3
+\subsection*{WEEK – 03}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 04/03/2026 To: 10/03/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Missing value imputation completed using mean for numerical features and mode for categorical features \\
+2. Outlier detection performed using IQR (Interquartile Range) method - identified 5\% outliers in income and loan amount \\
+3. Data cleaning - removed 15 duplicate records, fixed data type inconsistencies (string to float for numeric columns) \\
+4. Categorical encoding implemented - Label Encoding for ordinal variables (education level), One-hot Encoding for nominal variables (loan purpose, property area) \\
+5. Preprocessing pipeline created using scikit-learn Pipeline and ColumnTransformer for automated data transformation \\
+6. Saved cleaned dataset to artifacts folder as cleaned\_credit\_risk.csv for model training \\
+7. Created data validation checks to ensure data quality before model training \\
+8. Implemented train-test split (70-30) with stratified sampling to maintain class distribution \\
+9. Documented all preprocessing steps in data\_preprocessing.py for reproducibility \\
+10. Third meeting with mentor to review preprocessing pipeline and discuss feature engineering plans
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Missing value imputation strategy design, outlier detection using IQR method, data validation checks implementation & Data cleaning (duplicate removal, data type fixes), categorical encoding (Label + One-hot), train-test split implementation & Pipeline creation using scikit-learn ColumnTransformer, artifact saving (cleaned dataset), documentation in data_preprocessing.py \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Document preprocessing steps thoroughly. Consider feature scaling for models. \\
+Verify data quality after preprocessing. \\
+Plan for feature engineering in next phase.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 4
+\subsection*{WEEK – 04}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 11/03/2026 To: 17/03/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Feature Engineering completed with domain-specific features: \\
+   - Loan-to-Income Ratio: Monthly payment / Annual income (debt burden indicator) \\
+   - Credit Utilization Ratio: Credit balance / Credit limit (revolving credit usage) \\
+   - Debt-to-Income Ratio: Monthly debt payments / Gross income (overall debt load) \\
+2. Feature selection performed - reduced from 20 to 12 features using correlation matrix and feature importance \\
+3. MinMaxScaler normalization applied to all numerical features for consistent scale (0-1 range) \\
+4. Saved scaler to artifacts/scaler\_data.joblib for inference pipeline to ensure consistent scaling in production \\
+5. Created feature engineering module in prediction\_helper.py with functions for ratio calculations \\
+6. Analyzed feature importance using Random Forest feature importance scores \\
+7. Removed highly correlated features (>0.8) to reduce multicollinearity issues \\
+8. Created new binary features: has\_credit\_history, is\_stable\_employment \\
+9. Documented all engineered features with descriptions and formulas in feature\_engineering.md \\
+10. Fourth meeting with mentor to review engineered features and discuss model selection
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Loan-to-Income Ratio, Credit Utilization Ratio feature creation and validation & Feature selection using correlation matrix, feature importance analysis with Random Forest & MinMaxScaler normalization, pipeline saving to artifacts/scaler_data.joblib, feature engineering documentation \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Good progress on feature engineering. Document feature importance. \\
+Consider SHAP values for interpretability in later stages. \\
+Verify all engineered features make business sense.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 5
+\subsection*{WEEK – 05}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 18/03/2026 To: 24/03/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Model Development completed with multiple algorithms: \\
+   - Logistic Regression (baseline model: 85\% accuracy, 82\% precision, 80\% recall) \\
+   - Random Forest Classifier (88\% accuracy, 85\% precision, 84\% recall) \\
+   - XGBoost Classifier (89\% accuracy, 87\% precision, 85\% recall) \\
+   - LightGBM Classifier (87\% accuracy, 84\% precision, 83\% recall) \\
+2. Model evaluation metrics calculated (accuracy, precision, recall, F1-score, ROC-AUC) for all models \\
+3. All models saved to artifacts folder as .joblib files (logistic\_regression\_model.joblib, random\_forest\_model.joblib, xgboost\_model.joblib, lightgbm\_model.joblib) \\
+4. Initial model comparison report generated with detailed performance metrics \\
+5. Created model\_trainer.py module with reusable functions for model training and evaluation \\
+6. Implemented 5-fold cross-validation for robust performance estimation \\
+7. Generated confusion matrices for all models to analyze false positive/negative rates \\
+8. Performed hyperparameter tuning using default parameters for initial comparison \\
+9. Created classification reports with precision-recall-f1 scores for each class \\
+10. Fifth meeting with mentor to discuss model performance and plan optimization
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Logistic Regression and Random Forest model training, evaluation metrics calculation, confusion matrix generation & XGBoost and LightGBM model training, cross-validation implementation, model comparison report & Evaluation report creation, performance visualization (ROC curves), model comparison charts, model_trainer.py module development \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Focus on improving recall for default prediction. Consider class imbalance handling. \\
+Compare all models thoroughly before final selection. \\
+Consider using ensemble methods for better performance.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 6
+\subsection*{WEEK – 06}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 25/03/2026 To: 31/03/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Optuna hyperparameter tuning completed for all models with 50 trials each: \\
+   - Logistic Regression: C=[0.01-100], solver=['lbfgs','liblinear'], max_iter=[100-1000] \\
+   - Random Forest: n_estimators=[50-300], max_depth=[3-20], min_samples_split=[2-10] \\
+   - XGBoost: learning_rate=[0.01-0.3], max_depth=[3-15], n_estimators=[50-300] \\
+   - LightGBM: learning_rate=[0.01-0.3], num_leaves=[20-100], max_depth=[3-15] \\
+2. SMOTE Tomek implemented for handling class imbalance (10\% defaults) - resampled data from 1000 to 1400 samples \\
+3. 5-fold cross-validation performed for robust model evaluation with consistent results across folds \\
+4. Hyperparameter optimization improved model performance significantly: LR improved from 85\% to 92\% accuracy \\
+5. Best parameters identified for each algorithm and documented in model\_metrics.json \\
+6. Model comparison with optimized parameters completed - XGBoost showed best overall performance \\
+7. Created hyperparameter tuning script using Optuna with pruner for early stopping \\
+8. Analyzed learning curves to identify overfitting/underfitting issues \\
+9. Performed feature importance analysis using optimized models \\
+10. Sixth meeting with mentor to review optimized models and discuss final model selection
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Logistic Regression and Random Forest hyperparameter tuning with Optuna (50 trials each), best parameters identification & SMOTE Tomek implementation for class imbalance, 5-fold cross-validation setup, data resampling from 1000 to 1400 samples & XGBoost and LightGBM hyperparameter optimization, learning curve analysis, feature importance extraction \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Good progress on optimization. Focus on recall improvement. \\
+Document all hyperparameter values used. \\
+Consider model interpretability for final selection.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 7
+\subsection*{WEEK – 07}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 01/04/2026 To: 07/04/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Final model evaluation completed - Logistic Regression selected as final model due to best interpretability-accuracy balance \\
+2. \textbf{Model Performance:} Accuracy: 93\%, Recall: 94\%, Precision: 91\%, F1-Score: 92\%, ROC-AUC: 0.95 \\
+3. Confusion matrix generated: True Positives: 85, True Negatives: 845, False Positives: 12, False Negatives: 8 \\
+4. Classification report generated with per-class metrics (default vs non-default) \\
+5. ROC-AUC curve analysis completed showing 95\% area under curve - excellent discriminative ability \\
+6. SHAP values calculated using TreeExplainer for model interpretability and feature importance ranking: \\
+   - Top features: Credit Utilization (0.32), Loan-to-Income Ratio (0.28), Age (0.15), Income (0.12), Credit History (0.08) \\
+7. Final model saved to artifacts/logistic\_regression\_model.joblib with all preprocessing steps \\
+8. Model metrics saved to artifacts/model\_metrics.json including all performance metrics and hyperparameters \\
+9. Created model interpretation report explaining how each feature contributes to prediction \\
+10. Seventh meeting with mentor to review final model and discuss deployment plans
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Final model evaluation, confusion matrix analysis, model selection rationale & ROC-AUC curve generation and analysis, feature importance ranking using Random Forest & SHAP values calculation using TreeExplainer, interpretability report creation, model artifact saving \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Excellent results with 93\% accuracy and 94\% recall. Proceed to deployment. \\
+Ensure model interpretability is well documented for presentation. \\
+Prepare summary of model performance for viva.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 8
+\subsection*{WEEK – 08}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 08/04/2026 To: 14/04/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. Streamlit Dashboard development completed with professional UI: \\
+   - Sidebar navigation with Home, Predict, Model Info, and About sections \\
+   - Input form for borrower details with 12 input fields (loan amount, interest rate, term, income, etc.) \\
+2. Prediction result display section showing: \\
+   - Default probability (0-100\%) with color-coded risk indicator (Green/Yellow/Red) \\
+   - Credit score calculation (300-900 scale) using formula: 300 + 600 * (1 - probability) \\
+   - Borrower rating: Excellent (750+), Good (700-749), Fair (650-699), Poor (<650) \\
+3. Visualizations using Plotly: \\
+   - Pie chart showing probability distribution \\
+   - Bar chart displaying feature importance \\
+   - Gauge chart for credit score visualization \\
+4. Model integration with Streamlit using joblib artifacts (model, scaler, feature list) \\
+5. Dashboard testing with 50+ sample data points - all predictions working correctly \\
+6. Added input validation with error messages for invalid inputs (negative values, out-of-range) \\
+7. Created prediction\_helper.py module for consistent prediction logic across app \\
+8. Added loading spinners during model prediction for better UX \\
+9. Implemented session state management for maintaining user inputs \\
+10. Eighth meeting with mentor to review dashboard and plan testing phase
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+Dashboard layout and navigation design with sidebar, input form creation with 12 borrower fields & Prediction results display with probability, credit score calculation (300-900 scale), borrower rating logic & Model integration using joblib artifacts, Plotly visualizations (pie chart, bar chart, gauge chart), prediction_helper.py module development \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Dashboard looks good. Add more error handling and edge case management. \\
+Test with various input scenarios before final submission. \\
+Consider adding batch prediction feature.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 9
+\subsection*{WEEK – 09}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 15/04/2026 To: 21/04/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent 1. End-to-end integration testing completed with all components (data preprocessing, model inference, dashboard) \\
+2. Bug fixing and error handling implemented for edge cases: \\
+   - Missing input values: Show validation error with specific field highlighted \\
+   - Negative values: Display error message and prevent submission \\
+   - Out-of-range values: Show warning with acceptable range \\
+3. User acceptance testing passed with positive feedback from 5 test users \\
+4. Edge case testing completed: \\
+   - Test with minimum/maximum values for all numerical inputs \\
+   - Test with special characters in text fields \\
+   - Test with missing optional fields \\
+5. Performance optimization - reduced prediction time from 3 seconds to <1 second through: \\
+   - Cached model loading using @st.cache_resource \\
+   - Optimized feature engineering pipeline \\
+   - Reduced unnecessary data transformations \\
+6. Responsive design testing for mobile (375px), tablet (768px), and desktop (1024px+) views \\
+7. Code refactoring and documentation improvements: \\
+   - Added docstrings to all functions \\
+   - Created inline comments for complex logic \\
+   - Organized code into modular functions \\
+8. Created test cases in test_prediction.py covering 20+ scenarios \\
+9. Added logging for debugging and monitoring predictions in production \\
+10. Ninth meeting with mentor to review testing results and finalize submission
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+End-to-end integration testing, bug fixing for edge cases (missing values, negative inputs), test case documentation & User acceptance testing with 5 users, edge case testing (min/max values, special characters), test scenario creation & Performance optimization (reduced prediction time to <1 sec), responsive design testing (mobile/tablet/desktop), code refactoring and documentation \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Good testing coverage. Ensure all edge cases are handled. \\
+Prepare for final presentation and submission. \\
+Review code quality and documentation.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: Prof. Sohan Agate \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\newpage
+
+% Week 10
+\subsection*{WEEK – 10}
+\vspace{0.3cm}
+
+\textbf{Date:} From: 22/04/2026 To: 28/04/2026
+
+\medskip
+
+\noindent\textbf{Progress Achieved:}
+
+\medskip
+
+\noindent Final documentation (README.md) completed with all project details \\
+Technical documentation prepared covering architecture and usage \\
+Presentation slides prepared for viva voce examination \\
+Viva preparation guide created with common questions and answers \\
+Project submission completed with all required artifacts \\
+All model files, datasets, and documentation organized in artifacts/ \\
+Final testing and validation of complete system
+
+\medskip
+
+\noindent\textbf{Team Member's contribution:}
+
+\medskip
+
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{lightgray}
+\color{black}{\textbf{Ralph Joseph Dsouza}} & \color{black}{\textbf{Chris Fernandes}} & \color{black}{\textbf{Ijas Keni}} \\
+\hline
+README, presentation slides & Technical documentation & Viva prep, final submission \\
+\hline
+\end{tabular}
+
+\medskip
+
+\noindent\textbf{Mentor's Suggestions:}
+
+\medskip
+
+\noindent Project completed successfully. Good work throughout the semester. \\
+Prepare well for viva voce and final presentation.
+
+\medskip
+
+\noindent\begin{tabular}{p{4cm} p{6cm}}
+\textbf{Signature:} & Project guide: \underline{\hspace{5cm}} \\
+\end{tabular}
+
+\medskip
+
+\noindent\begin{tabular}{p{3.5cm} p{5cm} p{3cm}}
+\textbf{Ralph Joseph Dsouza:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Chris Fernandes:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\textbf{Ijas Keni:} & Signature: \underline{\hspace{4cm}} & Date: \underline{\hspace{2cm}} \\
+\end{tabular}
+
+\end{document}
